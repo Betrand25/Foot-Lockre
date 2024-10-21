@@ -1,0 +1,1279 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+/* image */
+img{
+    width: 250px;
+}
+
+/* Header Start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: -2px 40px;
+    background: black; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 115px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header .logo{
+    margin-top: 10px;
+    width: 300px;
+}
+
+#navbar, #navbar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600px;
+    color: white;
+}
+
+#navbar li a:hover,
+#navbar li a.line{
+    color:gray; 
+}
+
+#navbar li a.line::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.tabel{
+    background: black;
+    border-radius: 60px;
+    border: 2px solid white;
+    margin-top: 1px;
+    padding: 10px 20px 15px 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.tabel:hover{
+background-color: white;
+color: black;
+}
+
+/* Banner */
+#slogan{
+   background-image: url("Banner/Untitled_Artwork\ \(2\).png");
+   height: 800px;
+   width: 100%;
+   background-size: cover;
+   background-position: top 25% right 0;
+   padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+#slogan h1{
+    color:darkgreen;
+}
+
+#slogan a{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white ;
+    border-radius: 50px;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#slogan a{
+    text-decoration: none;
+    color: white;
+}
+
+#slogan a:hover{
+    background-color:white ;
+    color: #088108;
+}
+
+#slogan a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Merek SepatU */
+#MerekSepatu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    flex-wrap:wrap;
+    overflow-x: auto;
+    scroll-snap-align: start;
+}
+
+#MerekSepatu::-webkit-scrollbar{
+    width: 180px;
+}
+
+.nike{
+    height: 258px;
+    width: 258px;
+    border: 4px solid orange;
+    border-radius: 4px;
+    margin: 15px;
+}
+.adidas{
+    height: 258px;
+    width: 258px;
+    border: 4px solid rgb(133, 237, 96);
+    border-radius: 4px;
+    margin: 15px;
+    background-color: black;
+}
+.Puma{
+    margin-bottom:300px ;
+    height: 258px;
+    width: 258px;
+    border: 4px solid rgb(128, 0, 255);
+    border-radius: 4px;
+    margin: 15px; 
+    background-color: black;
+}
+.Converse{
+    margin-bottom:300px ;
+    height: 258px;
+    width: 258px;
+    border: 4px solid #fe2f2f;
+    border-radius: 4px;
+    margin: 15px;  
+    background-color: black;
+}
+
+/* Latest Product */
+#populer{
+    text-align: center;
+}
+
+#populer .pro1{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap:wrap;
+}
+#populer .pro{
+    width: 10%;
+    min-width: 260px;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(red, green, blue, alpha);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#populer .pro img{
+    width: 100%;
+}
+
+#populer .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#populer .pro .des h5{
+    color: rgb(255, 23, 23) ;
+}
+#populer .pro .des h6{
+    color: rgb(171, 171, 171) ;
+}
+#populer .pro .fal{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 600px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color:#000000;
+    border: 1px solid #cce7d0;
+    position:absolute;
+    bottom: 10px;
+    right: 9px;
+}
+
+#populer .pro1 .pro .n1{
+    border-radius: 25px;
+    border: 1px solid rgb(242, 242, 242);
+    background-color:  rgb(242, 242, 242);
+}
+#populer .pro1 .pro .hn{
+    margin-top: 20px;
+}
+#populer .pro1 .pro .a1{
+    height: 330px;
+    border-radius: 25px;
+    border: 1px solid rgb(242, 242, 242);
+    background-color:  rgb(242, 242, 242);    
+}
+#populer .pro1 .pro .p1{
+    mix-blend-mode: multiply;
+    height: 330px;
+    border-radius: 25px;
+    border: 1px solid rgb(242, 242, 242);
+    /* background-color:  rgb(242, 242, 242); */
+}
+#populer .pro1 .pro .c1{
+    height: 330px;
+    border-radius: 25px;
+    border: 1px solid rgb(242, 242, 242);
+    background-color:  rgb(242, 242, 242);
+}
+
+
+
+/* Don't Miss it */
+.dmi{
+    margin-left: 20px;
+    color: #5e5e5e;
+}
+
+/* banner 2 */
+#news{
+    display: flex;
+    justify-content: space-between;
+}
+#news .n1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(Gambar/a78efb64945921.5ae2e630f175f.jpg);
+    min-width: 500px;
+    height: 90vh;
+    width: 800px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 20px;
+    padding: 30px;
+    padding-top: 250px;
+    border: 6px solid rgb(11, 48, 232);
+}
+
+#news .n1-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(Gambar/065n10414-bqnc3-03.jpg);
+    min-width: 500px;
+    height: 90vh;
+    width: 800px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    padding-top: 250px;
+    border: 6px solid rgb(255, 0, 0);
+}
+
+#news h2 span{
+    color: rgb(27, 137, 255);
+}
+#news .n1-2 h2 span{
+    color:#fe2f2f ;
+}
+#news h4{
+    color:rgb(197, 194, 194);
+    font-weight: 500px;
+}
+#news .n1-2 h4{
+    color: white;
+}
+ #news h2{
+    color: white;
+    width: bold;
+ }
+ #news .n1-2 h2{
+    color:  rgb(27, 137, 255);
+ }
+#news .c2{
+    background-color: transparent;
+    border-radius: 60px;
+    border: 2px solid white;
+    margin-top: 1px;
+    padding: 8px 17px 8px 17px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+#news .c23{
+    background-color: rgb(255, 34, 34);
+    border: 2px solid rgb(27, 137, 255);
+    margin-top: 1px;
+    padding: 8px 25px 8px 25px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+#news .c23 a{
+    text-decoration: none;
+    color: white;
+}
+#news .c2:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+#news .c23:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    position: left;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: felx-start;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    
+}
+
+footer .h41{
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    /* margin-top: 50px; */
+}
+
+footer .h42{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-left: 1px;
+}
+
+footer .h43{
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 1px;
+    margin-top: 50px;
+}
+
+footer p{
+    font-size: 14px;
+    margin-bottom: 0 0 8px 0;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+footer .p2{
+    font-size: 14px;
+    margin-bottom: 0 0 8px 0;
+    color: rgb(255, 255, 255);
+    margin-left: 1px;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+footer i{
+    color: white;
+    margin-left: 50px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+footer .instal .row img{
+    border: 3px solid #088178;
+    border-radius: 25px;
+    width: 150px;
+    margin-right: 25px;
+}
+
+footer .instal img{
+    margin: 10ps 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color:#7f8281
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+
+}
+
+/* Start Media Query */
+
+@media (max-width:768px){
+    #header .logo{
+        width: 220px;
+    }
+    #navbar, #navbar2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar li a{
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600px;
+        color: white;
+    }
+    .tabel{
+        background: black;
+        border-radius: 60px;
+        border: 2px solid white;
+        margin-top: 1px;
+        padding:10px 14px 10px 14px;
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    /* Banner */
+   #slogan{
+    height: 500px;
+    padding: 0 10px;
+   }
+   #slogan h2{
+    font-size: 32px;
+    margin-left: 1px;
+   }
+   #slogan h1{
+    font-size: 35px;
+   }
+   #slogan p{
+    font-size: 15px;
+   }
+    
+   /* Latest Product */
+   #populer .pro1{
+    display:flex;
+    justify-content: space-betw;
+    padding-top: 20px;
+    flex-wrap:wrap;
+}
+
+/* banner 2 */
+#news{
+    display:contents;
+    justify-content: space-between;
+}
+#news .n1{
+    width: 740px;
+    margin-left: 14px;
+    padding-top: 200px;
+}
+#news .n1-2{
+    width: 740px;
+    margin-left: 14px;
+    padding-top: 200px;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space;
+    background-color: black;
+    position: left;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: felx-start;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.instal{
+    margin-left: 50px;
+}
+
+footer .col{
+    margin-right: 10px;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+}
+
+
+
+/* Shose Page */
+#page-header{
+    background-image: url(Banner/Spider-ManNew.png);
+    width: 100%;
+    height: 48vh;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: white;
+}
+
+.allProduct{
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* SEARCH */
+.form{
+    width: 20%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 1050px;
+}
+
+.form input{
+    width: 100%;
+    padding: 0 30px;
+    border-radius: 24px;
+    font: 16px;
+    text-transform: capitalize;
+    position: relative;
+    color: #000000;
+    height: 50px;
+}
+
+.form button{
+    position: absolute;
+    right: 6px;
+    height: 40px;
+    border:none;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    top: 5px;
+    border-radius: 50px;
+    width: 100px;
+}
+.form button:hover{
+    background-color: #7f8281;
+}
+
+/* MINI */
+#mini{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 2px solid black;
+    margin-left: 80px;
+    margin-top: 30px;
+    height: 40px;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+#mini a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#mini .a1{
+    padding-right: 200px;
+}
+
+#mini a:hover{
+    font-weight:unset;
+}
+
+/* Pagination */
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-bottom: 700px;
+}
+
+/* Sepatu */
+#populer .spiderman{
+   height: 330px;
+}
+
+@media(max-width:768px){
+#page-header{
+    background-size: cover;
+    width: 768px;
+    height: 180px;
+    padding-top: 40px;
+}
+
+    /* Shose Page */
+    #page-header h2{
+        font-size: 30px;
+    }
+    #page-header p{
+        font-size: 10px;
+    }
+    
+    /* Search */
+    #form2 .form {
+        width: 75%;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    #mini{
+       width: 80%;
+       font-size: 8px;
+    }
+    #mini .a1{
+        padding-right: 95px;
+    }
+}
+
+/* About Us */
+#bck{
+    background-color: #000000;
+}
+
+#page-header2{
+    background-image: url(Banner/AbsBannerNew.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 14px;
+}
+
+
+#page-header2 .p1{
+    color: rgb(213, 213, 213);
+    font-weight: bold;
+    font-size: 180px;
+    font-family: 'Secular One', sans-serif;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+/* Tulisan Perjalan */
+marquee{
+
+    color: white;
+    font-size: 18px;
+}
+
+/* Penjelasan AboutUs */
+#aboutUs{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+}
+
+#aboutUs img{
+    width: 50%;
+    height: 600px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 7px solid blueviolet;
+}
+
+#aboutUs div{
+    padding-left: 40px;
+}
+
+#aboutUs h2{
+    color: blueviolet;
+}
+
+#aboutUs p{
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+
+abbr{
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+}
+
+
+#aboutUs2{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    text-align: right;
+}
+
+#aboutUs2 img{
+    width: 50%;
+    height: 600px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 7px solid rgb(0, 76, 255);
+}
+
+#aboutUs2 div{
+    padding-left: 40px;
+}
+
+#aboutUs2 h2{
+    color: rgb(0, 76, 255);
+}
+
+#aboutUs2 p{
+    font-size: 25px;
+    color: white;
+    text-align: right;
+}
+
+@media(max-width:768px) {
+    #page-header2{
+        background-size: cover;
+        width: 762px;
+        height: 180px;
+    }
+    #page-header2 .p1{
+        font-size: 90px;
+    }
+    marquee{
+        font-size: 15px;
+    }
+
+    #aboutUs img{
+        height: 390px;
+    }
+    #aboutUs h2{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    #aboutUs p{
+        font-size: 15px;
+        text-align: justify;
+        margin-right: 10px;
+    }
+
+    #aboutUs2 img{
+        height: 390px;
+    }
+
+    #aboutUs2 h2{
+        font-size: 35px;
+        margin-right: 10px;
+    }
+    #aboutUs2 p{
+        font-size: 17px;
+        text-align:right;
+        margin-right: 10px;
+    }
+
+}
+
+/* Events */
+#page-header3{
+    background-image: url(Banner/Nike1985New.png);
+    width: 100%;
+    height: 47vh;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header3 h1{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#page-header3 p{
+    color: rgb(60, 59, 59);
+    font-weight: bold;
+    /* font-size: 10px; */
+}
+
+/* Details */
+#details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#details .name{
+    width: 40%;
+}
+
+#details .name span{
+    font-size: 12px;
+}
+
+#details .name h1{
+    font-size: 65px;
+    line-height: 35px;
+    padding: 20px 0;
+    margin-left: 28px;
+}
+
+#details .name h2{
+    font-size: 90px;
+    line-height: 35px;
+    padding: 20px 0;
+    color: rgb(0, 70, 245);
+    margin-left: 25px;
+}
+
+
+#details .name li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    margin-left: 30px;
+}
+
+#details .name li i{
+    font-size: 18px;
+    padding-right: 22px;
+}
+
+#details .name li p{
+    margin: 0;
+    font-size: 20px;
+}
+
+/* map */
+#details .map{
+    width: 50%;
+    height:380px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 5px solid rgb(165, 165, 165);
+}
+
+#details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+#condition{
+    display: flex;
+    align-items: center;
+}
+
+#condition img{
+    width: 60%;
+    height: 510px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 5px solid rgb(229, 5, 5);
+}
+
+#condition div{
+    padding-left: 40px;
+}
+
+#condition h1{
+    color: rgb(235, 6, 67);
+    font-size: 80px;
+    text-decoration: underline;
+}
+
+#condition h2{
+    color: rgb(0, 76, 255);
+    font-size: 75px;
+    text-decoration: underline;
+}
+
+#condition p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+#condition ul{
+    font-size: 25px;
+    align-items: center;
+    text-align:justify;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#condition .li1{
+    color: rgb(131, 131, 131);
+}
+
+#condition .sub{
+    color: rgb(255, 0, 0);
+}
+
+#condition a:hover{
+    color: rgb(0, 0, 0);
+}
+
+#condition .li2{
+    color: rgb(0, 76, 255);
+}
+
+#condition .li3{
+    color: rgb(235, 6, 67);
+}
+
+/* Tulisan Berjalan "Events" */
+#tulisanberjalan marquee{
+    background-color: rgb(223, 16, 71);
+    height: 60px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+#node{
+    text-align: center;
+}
+
+#node .red{
+    color: rgb(213, 0, 0);
+}
+
+@media(max-width:768px){
+    #page-header3{
+        background-size: cover;
+        width: 768px;
+        height: 182px;
+    }
+    #page-header3 h1{
+        font-size: 28px;
+    }
+    #page-header3 p{
+        font-size: 9px;
+        padding-bottom: 10px;
+    }
+
+    #tulisanberjalan marquee{
+        height: 36px;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    #details .name h1{
+        font-size: 50px;
+    }
+    #details .name h2{
+        font-size: 45px;
+        margin: none;
+        padding-top: 1px;
+    }
+
+    #details .map{
+        width: 53%;
+        margin-right: 5px;
+    }
+
+    #details .name li i{
+        font-size: 20px;
+    }
+    #details .name li p{
+        font-size: 15px;
+    }
+
+    #condition img{
+        height: 390px;
+        width: 450px;
+    }
+
+    #condition h1{
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    #condition h2{
+        font-size: 38px;
+        padding-top: 1px;
+    }
+    #condition ul{
+        font-size: 20px;
+    }
+}
+
+/* Subcribe */
+
+.subcribe{
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 60px;
+    height: 50px;
+    width: 121px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#form{
+    background-image: url(Gambar/Most-Popular-Air-Jordan-1s-Of-All-Time-scaled-1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+    width: 100%;
+}
+
+#form .konten1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 500px;
+    height: 70vh;
+    width: 800px;
+    margin-left: 20px;
+    padding: 30px;
+    padding-top: 200px;
+}
+
+#form .konten1 h1{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-weight: bold;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+#form .konten1 p{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#form .konten1 .icon{
+    color: white;
+    font-size: 20px;
+}
+
+#form .konten2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 500px;
+    height: 70vh;
+    width: 800px;
+    margin-left: 20px;
+    padding: 30px;
+    padding-top: 250px;
+}
+
+#form  h1{
+    margin-top: 300px;
+    color: white;
+}
+
+#form h1{
+    justify-content: left;
+}
+
+#form h2{
+    color: white;
+    padding-top: 20px;
+    
+}
+
+#form .isi{
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    color: white;
+    margin-top: 100px; 
+    border-radius: 25px;
+    height: 560px;
+    width: 600px;
+    padding-left: 40px;
+}
+
+#form .inputbox{
+    width: 80%;
+    height: 50px;
+    border-bottom: 2px solid white;
+}
+
+#form input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+ input[type="text"],[type="email"],[type="number"]{
+    color: white;
+}
+
+#form button{
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    width: 30%;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+}
+
+#form button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+@media(max-width:768px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+   #form{
+    background-size: cover;
+    width: 768px;
+    margin: none;
+   } 
+#form .konten1{
+    padding-right: 10px;
+    min-width: 1px;
+}
+
+   #form .konten1 h1{
+    font-size: 45px;
+   }
+   #form .konten1 p{
+    font-size: 15px;
+   }
+
+   #form .isi{
+   width: 43%;
+   margin-right: 800px;
+   }
+
+   .konten2 h2{
+    font-size: 30px;
+    text-align: center;
+   }
+}
